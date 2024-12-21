@@ -1,0 +1,941 @@
+.view-OnlySec{
+    border: 1px solid white;
+    height: 800px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.nftSecOpen{
+    /* border: 1px solid white; */
+    height: 1300px;
+    width: 100%;
+    margin-top: 70px;
+    background-image: linear-gradient(#020710 10%, #ce02d985 30%, #020710);
+}
+
+.nftNav{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid white; */
+    overflow-x: scroll;
+   margin-bottom: 30px;
+   background-color: transparent;
+}
+
+.nftNav::-webkit-scrollbar{
+   background-color:transparent ;
+
+}
+
+.nftImageFlexer::-webkit-scrollbar-button{
+   background-color: transparent;
+}
+
+/* .nftNav::-webkit-scrollbar-thumb{
+    background-color: #CF02D9;
+} */
+
+.ghost{
+
+}
+
+.roller{
+    border-radius: 30px;
+   height: 40px;
+   width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    animation: roll infinite 3s ease-in-out ;
+    cursor: pointer; 
+    scroll-behavior: smooth;
+}
+
+.static{
+    
+        height: 50px;
+        border-radius: 30px;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        cursor: pointer;
+}
+
+      /* All sec */
+
+.nftImageFlexer{
+    height: 450px;
+    width: 95%;
+    /* border: 1px solid white;   */
+    display: flex;
+    padding-left: 5px;
+    overflow-x: hidden;
+    border-radius: 15px;
+    margin: auto;
+    gap: 40px;
+    align-items: center;
+    background-color: transparent;
+}
+
+/* .nftImageFlexer::-webkit-scrollbar{
+    background-color: transparent;
+}
+
+.nftImageFlexer::-webkit-scrollbar-button{
+    background-color: transparent;
+}
+
+.nftImageFlexer::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+.nftImageFlexer::-webkit-scrollbar-thumb{
+    background-color: transparent;
+} */
+
+.nftImageFlexer span{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    gap: 40px;
+    /* border: 1px solid white; */
+    background-color: transparent;
+   
+}
+
+.nftImageFlexer img{
+    border-radius: 15px;
+}
+
+
+
+.nftImageFlexer div{
+    /* border: 1px solid white; */
+    height: 400px;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    position: relative;
+}
+
+.nftImageFlexer div:hover{
+    transform: scale(110%);
+   opacity: 0.9;
+   transition: 0.4s ease-in-out;
+}
+
+.arrowLeft{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid white;
+    border-left: 1px solid  white;
+    left: 15px;
+    transform: rotate(-45deg);
+}
+
+
+
+.arrowRight{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    right: 15px;
+    transform: rotate(135deg);
+}
+
+.enter1{
+    animation: enter1 300ms ease-in-out ;
+}
+
+.enter1 div:nth-child(2){
+    order:1 ;
+}
+
+.enter1 div:nth-child(3){
+    order: 2;
+}
+
+.enter1 div:nth-child(1){
+    order: 3;
+}
+
+.enter2{
+    animation: enter2 300ms ease-in-out ;
+}
+
+.enter2 div:nth-child(3){
+    order:1 ;
+}
+
+.enter2 div:nth-child(1){
+    order: 2;
+}
+
+.enter2 div:nth-child(2){
+    order: 3;
+}
+
+.enter3{
+    animation: enter3 300ms ease-in-out ;
+}
+
+.enter3 div:nth-child(1){
+    order:1 ;
+}
+
+.enter3 div:nth-child(2){
+    order: 2;
+}
+
+.enter3 div:nth-child(3){
+    order: 3;
+}
+
+
+
+@keyframes enter1 {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes enter2 {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes enter3 {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.nftSecNftName{
+    background-color: transparent;
+    display: flex ;
+    align-items: center;
+    gap: 5x;
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+}
+
+.floorPrice{
+    background-color: transparent;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
+     /* Art Sec */
+
+.artSec , .gamingSec, .photographySec, .membershipSec {
+    width: 90%;
+    box-shadow: 10px 10px 30px #ce02d985;
+    background-color: transparent;
+    border-radius: 30px;
+    margin: auto;
+    position: relative;
+    /* border: 1px solid white; */
+}  
+
+
+.nftTrendingH1{
+    margin-top: 100px;
+    background-color: transparent;
+    /* border: 1px solid white; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.Trending-Nfts{
+    height: 700px;
+    width: 100%;
+    /* border: 1px solid white; */
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.Trending-Nfts::-webkit-scrollbar{
+   background-color: transparent;
+   height: 10px;
+}
+
+.Trending-Nfts::-webkit-scrollbar-thumb{
+    background-color: #ce02d9;
+   
+    border-radius: 30px;
+}
+
+
+
+.part1-5{
+    height: 650px;
+    width: 650px;
+    /* border: 1px solid red; */
+    
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.part1-5 section{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid white; */
+    background-color: transparent;
+}
+
+.part6-10{
+    height: 650px;
+    background-color: transparent;
+    width: 650px;
+  
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.part6-10 section{
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid white; */
+    background-color: transparent;
+}
+
+.staticstics1{
+   display: flex;
+}
+
+.staticstics1 div{
+    height: 100%;
+  
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.staticstics1_1{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staticstics1_2{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.staticstics1_3{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.staticstics1_4{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.statictics2{
+    display: flex;
+}
+
+.statictics2 div{
+    height: 100%;
+ 
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.statictics2_1{
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statictics2_2{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.statictics2_3{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.statictics2_4{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.part1{
+    display: flex;
+}
+
+.part1 div{
+    height: 100%;
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part1_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1_2{
+    padding-left: 20px;
+    width: 400px;
+    display: flex;
+    gap: 10px;
+}
+
+.part1_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part2{
+    display: flex;
+}
+
+.part2 div{
+    height: 100%;
+   
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part2_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part2_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part2_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part3{
+    display: flex;
+}
+
+.part3 div{
+    height: 100%;
+   
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part3_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part3_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part3_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part3_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part4{
+    display: flex;
+}
+
+.part4 div{
+    height: 100%;
+   
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part4_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part4_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part4_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part4_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part5{
+    display: flex;
+}
+
+.part5 div{
+    height: 100%;
+   
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part5_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part5_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part5_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part5_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part6{
+    display: flex;
+}
+
+.part6 div{
+    height: 100%;
+   
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part6_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part6_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part6_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part6_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part7{
+    display: flex;
+}
+
+.part7 div{
+    height: 100%;
+    
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part7_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part7_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part7_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part7_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part8{
+    display: flex;
+}
+
+.part8 div{
+    height: 100%;
+    
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part8_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part8_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part8_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part8_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part9{
+    display: flex;
+}
+
+.part9 div{
+    height: 100%;
+    
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part9_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part9_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+
+.part9_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part9_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.part10{
+    display: flex;
+}
+
+.part10 div{
+    height: 100%;
+    
+    background-color: transparent;
+    /* border: 1px solid white; */
+}
+
+.part10_1{
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part10_2{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.part10_3{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part10_4{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partImgDiv{
+    background-color: transparent;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.partImg{
+    background-color: transparent;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.nftNameP{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.artNFTImgDiv{
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+.artNFTImg{
+  height: 100%;
+  border-radius: 30px;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.9;
+}
+
+.artImgName{
+    background-color: transparent;
+    position: absolute;
+   bottom: 100px;
+   left: 5%;
+   align-items: center;
+   font-size: 20px;
+}
+
+.artImgDetails{
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    left: 5%;
+    font-size: 14px;
+}
+
+.artImgDetails span{
+    background-color: transparent;
+}
+
+.artImgViewCol{
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+    width: 150px;
+    animation: roll 3s infinite ease-in-out;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.blurrer{
+    height: 50%;
+    width: 90%;
+    flex-shrink: 0;
+    background-color: black;
+    border-radius: 30px;
+    filter: blur(25px);
+}
+
+.viewColTxt{
+    position: absolute;
+    background-color: transparent;
+}
+
+.artImgViewCol:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:700px) {
+ .artImgName{
+    bottom: 50px;
+ }  
+ 
+ .artImgDetails{
+    bottom: 20px;
+ }
+ .artImgViewCol{
+    bottom: 20px;
+ }
+
+}
+
+@media screen and (max-width:500px) {
+    .artImgName{
+        font-size: 16px;
+    }
+
+    .artImgDetails{
+        font-size: 12px;
+    }
+
+    .artImgViewCol{
+        font-size: 12px;
+        height: 30px;
+        width: 120px;
+    }
+}
+
+.artNFTImg:hover{
+    transform: scale(110%);
+    transition: 0.7s ease-in-out;
+}
