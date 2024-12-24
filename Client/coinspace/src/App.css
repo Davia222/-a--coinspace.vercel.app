@@ -34,8 +34,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 .loadingScreen{
- margin-top: -100px;
-  height: 150vh;
+ 
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
